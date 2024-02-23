@@ -3,6 +3,8 @@ package nationalize;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class Nationality {
 
@@ -16,6 +18,10 @@ public class Nationality {
         this.count = count;
         this.name = name;
         this.countries = countries;
+    }
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.NO_CLASS_NAME_STYLE);
     }
 
     public long getCount() {
@@ -43,7 +49,10 @@ public class Nationality {
     }
 
     public static class Country {
-
+        @Override
+        public String toString() {
+            return ReflectionToStringBuilder.toString(this, ToStringStyle.NO_CLASS_NAME_STYLE);
+        }
         private String countryId;
         private float probability;
 
@@ -67,6 +76,8 @@ public class Nationality {
         public void setProbability(float probability) {
             this.probability = probability;
         }
+
+
 
     }
 
