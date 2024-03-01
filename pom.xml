@@ -18,12 +18,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
         <mainClass>nationalize.Main</mainClass>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
+            <groupId>org.projectlombok</groupId>git 
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
             <scope>provided</scope>
